@@ -1,0 +1,618 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ofp {
+    width: 100%;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.gotop{
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #333333;
+    border: 1px solid #333333;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 85%;
+    text-decoration: none;
+    color: #333333;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+.gotop::before{
+    content: "";
+    display: block;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    width: 25%;
+    height: 25%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.gotop:hover{
+    opacity: 1;
+}
+@media(max-width:768px){
+    .gotop{
+        width: 40px;
+        height: 40px;
+        text-indent: -9999px;
+        opacity: 1;
+        border: none;
+        background: #333333;
+        bottom: 10px;
+        right: 10px;
+    }
+    .gotop::before{
+        bottom: 0;
+    }
+}
+.tri {
+    width: 0%;
+    height: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid ;
+    color: #b71b26;
+    margin-top: 109px;
+}
+.line {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.line::before,
+.line::after {
+    background-color: #333333;
+    content: "";
+    height: 1px;
+    width: 60px;
+}
+.line::before {
+    margin-right: 15px;
+}
+.line::after {
+    margin-left: 15px;
+}
+.red::before,
+.red::after {
+    background-color: #b71b26;
+    content: "";
+    height: 1px;
+    width: 60px;
+}
+.red {
+    color: #b71b26;
+}
+header {
+    display: flex;
+    margin: 24px;
+    width: 1318px;
+}
+header ul {
+    display: flex;
+}
+h1 {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+.na {
+    margin: 32.42px 0px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+nav {
+    width: 629px;
+    display: flex;
+    margin-left: 289px;
+    margin-right: 24px;
+}
+.f_lo {
+    width: 100%;
+}
+.haba {
+    margin: 0px 40px;
+}
+h2 {
+    text-align: center;
+    font-size: 42px;
+    margin: 160px auto 16px;
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 48px;
+}
+.hairi {
+    font-size: 16px;
+    width: 1020px;
+    margin: 24px 173px 0px;
+    line-height: 32px;
+    letter-spacing: 0.09em;
+}
+.koumoku {
+    display: flex;
+    margin-top: 48px;
+    justify-content: center;
+}
+h4 {
+    font-size: 24px;
+}
+.aida {
+    margin: 0px 60px;
+}
+.koumoku li {
+    width: 300px;
+}
+.koumoku img {
+    width: 100%;
+}
+.flh ul {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0px;
+}
+.flh li {
+    font-size: 28px;
+    margin: 0px 41px;
+    width: 60px;
+    height: 280px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 60px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.haikei {
+    background-color: #f4f5f7;
+    height: 1218px;
+}
+.fhaikei {
+    background-color: #f4f5f7;
+    height: 498px;
+}
+/* dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  dl dt {
+    width: 20%;
+  }
+  dl dd {
+    width: 80%;
+  } */
+dl {
+    /* margin-top: 48px; */
+    width: 1020px;
+    margin: 48px auto 0;
+    /* margin-left: 173px;
+    margin-right:173px; */
+}
+.kuro {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.aka {
+    display: flex;
+    align-items: center;
+}
+dd {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+.kuro dt {
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    color: #ffffff;
+    font-size: 34px;
+    text-align: center;
+    background-color: #333333;
+    margin-right: 8px;
+}
+.aka dt {
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    color: #ffffff;
+    font-size: 34px;
+    text-align: center;
+    background-color: #b71b26;
+    margin-right: 8px;
+    padding: 0 10px;
+}
+form {
+    width: 1020px;
+    height: 1000px;
+    margin: 47px auto 48px ;
+    background-color: #eff1f4;
+    padding-top: 24px;
+}
+.mbtn {
+    margin-left: 238.25px;
+    font-size: 16px;
+}
+/* span {
+    width: 0%;
+    height: 0%;
+    border-top: 4.75px solid transparent;
+    border-bottom: 4.75px solid transparent;
+    border-left: 4.75px solid ;
+    color: #333333; */
+/* 擬似要素で三角アイコンをつくる */
+    /* content: '';
+    display: inline-block;
+    border-style: solid;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #333333;
+    display: inline-block;
+    width: 0;
+    height: 0; */
+    /* 矢印アイコンの位置を設定 */
+    /* position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); translateYのみ */
+/* } */
+.mbtn {
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .mbtn:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.75px 0 4.75px 4.75px;
+    border-color: transparent transparent transparent #333333;
+    position: absolute;
+    top: 60%;
+    right: -8px;
+    margin-top: -4px;
+  }
+form p {
+    margin-top: 24px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+form span {
+    color: #ffffff;
+    background-color: #b71b26;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+.toii {
+    margin-left: 80px;
+} 
+.fchf {
+    margin-left: 12px;
+}
+.fchs {
+    margin-left: 40px;
+}
+.toin {
+    margin-left: 190px;
+}
+.tois {
+    margin-left: 168px;
+}
+.toiy {
+    margin-left: 168px;
+}
+.toig {
+    margin-left: 212px;
+}
+.toir {
+    margin-left: 326px;
+}
+.toise {
+    margin-left: 102px;
+}
+.toih {
+    margin-left: 16px;
+}
+.toik {
+    margin-left: 80px;
+    display: flex;
+}
+.toij input[type="submit"] {
+    position: relative;
+    margin: 48px auto;
+    width: 300px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #333333;
+    text-decoration: none;
+}
+.toij::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9.5px 0 9.5px 19.5px;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    /* top: 45%;
+    right: 35px; */
+    margin-top: 26px;
+    left: 770px;
+    background-color: #333333;
+    z-index: 1;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    width: 332px; 
+    height: 52px;
+}
+.toig input[type="text"] {
+    width: 111px;
+}
+.toir input[type="text"] {
+    width: 664px;
+}
+.toise input[type="email"] {
+    width: 664px;
+}
+.toih input[type="email"] {
+    width: 664px;
+}
+.toik textarea {
+    width: 664px;
+    height: 208px;
+    margin-left: 55px;
+}
+.uehe {
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+    background-color: #eff1f4;
+}
+footer {
+    width: 100%;
+    height: 62px;
+    font-size: 14px;
+    color:#ffffff;
+    display: flex;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:768px) {
+    header {
+        width: 375px;
+        height: 51.71px;
+        margin: 0px;
+    }
+    h1 {
+        width: 240px;
+    }
+    .f_lo {
+        width: 240px;
+        height: 19.71px;
+    }
+    .gMenu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+      }
+      /* メニューアイコンを画面右上に固定しています */
+      .gMenu .menu-icon {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        padding-top: 5px;
+        height: 12px;
+      }
+      /* メニューアイコン（三本線）の真ん中の線です */
+      .gMenu .menu-icon .navicon {
+        background: #ffc107; /* 色は自由に変更可能です */
+        display: block;
+        height: 2px; /* 太さ */
+        width: 31px; /* 長さ */
+        position: relative;
+        transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+      }
+      /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+      .gMenu .menu-icon .navicon::before,
+      .gMenu .menu-icon .navicon::after {
+        background: #ffc107; /* 色は自由に変更可能です */
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+        width: 100%;
+      }
+      .gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+      .gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+      /* 表示されるメニューです */
+      .gMenu .menu {
+        background-color: rgba(255,255,255,0.9);
+        overflow: hidden;
+        max-height: 0; /* ★最初は高さを0にして非表示状態に */
+        transition: max-height .6s; /* 表示されるときのアニメーション */
+        text-align: center;
+      }
+      /* メニュー部分のデザインです */
+      .gMenu .menu li:first-of-type {
+        padding-top: 50px;
+      }
+      .gMenu .menu li a {
+        display: block;
+        padding: 24px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .gMenu .menu li a:hover {
+        background-color: #f4f4f4;
+      }
+      /* チェックボックスは常に非表示です */
+      .gMenu .menu-btn {
+        display: none;
+      }
+      /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+      .gMenu .menu-btn:checked ~ .menu {
+        max-height: 338px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+        transition: max-height .6s;
+      }
+      /* メニューボタンの中央の線を非表示に */
+      .gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+      
+      /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+      .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+      .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+      /* サイトに合わせてオリジナルカスタマイズ */
+      .gMenu .menu-icon {
+        top: 26px;
+      }
+      .gMenu .menu-icon .navicon,
+      .gMenu .menu-icon .navicon::before,
+      .gMenu .menu-icon .navicon::after {
+        background: #333333;
+      }
+      /* .na{
+        height: 100%;
+      } */
+      /* .na .nav {
+        display: block;
+      } */
+      .hairi {
+        width: 351px;
+        margin-left: 12px;
+      }
+      h2 {
+        margin-top: 48px;
+      }
+      .koumoku {
+        display: block;
+        margin: 0 auto;
+        padding: 24px 12px;
+        width: 375px;
+      }
+      .aida {
+        margin: 0px 0px;
+      }
+      .koumoku li {
+        width: 100%;
+      }
+      .flh ul {
+        display: block;
+        height: 352px;
+      }
+      .flh li {
+        display: block;
+        width: 300px;
+        height: 32px;
+        text-orientation: mixed;
+        writing-mode: horizontal-tb;
+        text-align: center;
+      }
+      .tri {
+        width: 16px;
+        height: 32px;
+        transform: rotate(90deg);
+        margin: 0 auto;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid ;
+      }
+      h4 {
+        text-align: center;
+      }
+      .mbtn {
+        left: 55px;
+      }
+      dl {
+        width: 351px;
+        margin: 24px auto 0;
+    } 
+    form {
+        width: 375px;
+        height: 912px;
+        text-align: center;
+    }
+    .toii {
+        width: 186px;
+        margin-left: 94.5px;
+        font-size: 16px;
+    } 
+    .toii label {
+        font-size: 14px;
+    }
+    .fchf {
+        margin-left: 0px;
+    }
+    .fchs {
+        margin-left: 0px;
+    }
+    .toin {
+        margin-left: 0px;
+    }
+    .tois {
+        margin-left: 0px;
+    }
+    .toiy {
+        margin-left: 0px;
+    }
+    .toig {
+        margin-left: 0px;
+    }
+    .toir {
+        margin-left: 0px;
+    }
+    .toise {
+        margin-left: 0px;
+    }
+    .toih {
+        margin-left: 0px;
+    }
+    .toik {
+        margin-left: 0px;
+        display: flex;
+    }
+      /* .koumoku li {
+        display: flex;
+        /* justify-content: center; */
+      /* } */
+      /* .koumoku ul {
+        flex-wrap: wrap;
+      } 
+       */
+}

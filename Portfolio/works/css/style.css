@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* 使用予定フォント */
+/* font-family: 'Hina Mincho', serif;
+font-family: 'Homemade Apple', cursive; */
+/* font-family: 'Kiwi Maru', serif; */
+
+
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/aig-ai231130017-xl_TP_V.jpg);
+    background-repeat: repeat-x;
+    animation: loop 25s linear infinite;
+    background-size: cover;
+    text-align: center;
+}
+@keyframes loop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2000px 0; /* 画像のマイナス幅 */
+    }
+}
+header {
+    font-family: 'Homemade Apple',cursive;
+    font-size: 120px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.change {
+    font-family: 'Hina Mincho', serif;
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+img {
+    width: 300px;
+    margin: 20px;
+}
+.list {
+    display: flex;
+    height: 30vh;
+}
+.list_point {
+    display: flex;
+}
+.list_point ul {
+    background-color: #ffffff;
+    width: 300px;
+    margin: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+span {
+    color: #ff0000;
+    margin: 0 5px;
+}
+@media screen and (max-width:900px)  {
+    header {
+        height: 20vh;
+        font-size: 60px;
+    }
+    img {
+        width: 160px;
+        margin: 10px;
+    }
+    .list {
+        flex-wrap: wrap;
+    }
+    .list_point {
+        flex-wrap: wrap;
+    }
+    .list_point ul {
+        width: 160px;
+        height: 100%;
+        margin: 10px;
+    }
+    .change {
+        display: block;
+        font-size: 40px;
+    }
+}
